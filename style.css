@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  background-color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+.container {
+  color: rgba(255, 255, 255, 1);
+  width: 50%;
+  margin: 150px auto;
+}
+.heading {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: normal;
+}
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inputField {
+  font-family: Inter;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 300;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  line-height: normal;
+}
+.inputField:focus {
+  outline: none;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+label {
+  font-weight: 300;
+  font-size: 24px;
+}
+div span {
+  padding: 5px;
+}
+div span:first-child {
+  margin-right: 10px;
+}
+div input[type="checkbox"] {
+  width: auto;
+}
+.submitBtn {
+  font-family: Inter;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (max-width: 560px) {
+  div span {
+    display: block;
+  }
+}

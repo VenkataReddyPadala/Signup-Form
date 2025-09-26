@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🐶</text></svg>"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Signup</h1>
+      <form action="#" method="post" class="signupForm">
+        <input
+          type="text"
+          name="name"
+          class="inputField"
+          placeholder="Full Name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          class="inputField"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          class="inputField"
+          placeholder="Password"
+          required
+        />
+        <input
+          type="password"
+          name="confirmPassword"
+          class="inputField"
+          placeholder="Confirm Password"
+          required
+        />
+        <input type="date" name="date" class="inputField" required />
+        <div>
+          <span>
+            <input
+              type="radio"
+              name="role"
+              id="student"
+              value="student"
+              required
+            />
+            <label for="student">Student</label>
+          </span>
+          <span>
+            <input
+              type="radio"
+              name="role"
+              id="employee"
+              name="employee"
+              required
+            />
+            <label for="employee">Employee</label>
+          </span>
+        </div>
+        <div>
+          <input type="checkbox" name="agree" id="agree" required />
+          <label for="agree">I agree to all the Terms and conditions</label>
+        </div>
+        <button type="submit" class="submitBtn">Signup</button>
+      </form>
+    </div>
+  </body>
+</html>
